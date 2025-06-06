@@ -6,14 +6,14 @@ Nick Alan Marpaung 5025241088 ||
 Willy Dava Nugraha 5025241090 ||
 Farras Abdurrazzaq 5025241091 ||
 Abdullah Sultan Barizy 5025241092 <- Me
-
+\n
 STEP 1
 impor library pandas untuk fungsi dataframe dan library math untuk fungsi faktorial
 ```
 import pandas as pd
 import math
 ```
-
+\n
 STEP 2
 buat dataframe berdasarkan soal
 ```
