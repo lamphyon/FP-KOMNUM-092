@@ -28,7 +28,7 @@ cetak dataframe df
 df
 ```
 
-STEP 3
+### STEP 3
 buat kolom Δfx didapat dari selisih kolom y
 ```
 df1 = (df['y'].shift(-1) - df['y'] ) 
@@ -46,7 +46,7 @@ cetak dataframe df1
 df1
 ```
 
-STEP 4
+### STEP 4
 buat kolom Δ2fx didapat dari selisih kolom Δfx
 ```
 df2 = (df1['Δfx'].shift(-1) - df1['Δfx'] ) 
@@ -64,7 +64,7 @@ cetak dataframe df2
 df2
 ```
 
-STEP 5
+### STEP 5
 buat kolom Δ3fx didapat dari selisih kolom Δ2fx
 ```
 df3 = (df2['Δ2fx'].shift(-1) - df2['Δ2fx'] ) 
@@ -82,7 +82,7 @@ cetak dataframe df3
 df3
 ```
 
-STEP 6
+### STEP 6
 buat kolom Δ4fx didapat dari selisih kolom Δ3fx
 ```
 df4 = (df3['Δ3fx'].shift(-1) - df3['Δ3fx'] ) 
@@ -100,7 +100,7 @@ cetak dataframe df4
 df4
 ```
 
-STEP 7
+### STEP 7
 buat fungsi untuk mendapatkan indeks dari x0
 ```
 def get_index(x0,df):
@@ -123,8 +123,8 @@ cetak indeks (indeks dimulai dari nol)
 index_x0
 ```
 
-STEP 8
-h merupakan selisih nilai x
+### STEP 8
+cari h (h merupakan selisih nilai x)
 ```
 h = df.iloc[1]['x'] - df.iloc[0]['x']
 ```
@@ -133,7 +133,7 @@ cetak nilai h
 h
 ```
 
-STEP 9
+### STEP 9
 cari s (s adalah selisih x dari nilai dicari dan x patokan lalu dibagi h)
 ```
 s = (xs - x0) / h
@@ -143,7 +143,7 @@ cetak nilai s
 s
 ```
 
-STEP 10
+### STEP 10
 buat fungsi untuk mencari nilai yang dicari dengan newton gregory forward
 ```
 def ngf_4(index,s,df,df1,df2,df3,df4):
@@ -162,13 +162,13 @@ mencetak hasil newton gregory forward
 hasil_ngf
 ```
 
-STEP 11
+### STEP 11
 mengeprint hasil
 ```
 print(f'Hasil Newton Gregory Forward untuk xs = {xs} menggunakan x0 = {x0} adalah {hasil_ngf}')
 ```
 
-STEP 12
+### STEP 12
 fungsi mencari error true
 ```
 def error_true(y_true,y_aprox):
@@ -186,7 +186,8 @@ cetak error true
 ```
 et
 ```
-OPSIONAL cetak error sebelum dibulatkan dua angka belakang koma
+### OPSIONAL
+cetak error sebelum dibulatkan dua angka belakang koma
 ```
 print(abs( (y_true - hasil_ngf) / y_true ) * 100)
 ```
