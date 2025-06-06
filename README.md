@@ -14,7 +14,9 @@ impor library pandas untuk fungsi dataframe dan library math untuk fungsi faktor
 import pandas as pd
 import math
 ```
-\n
+
+
+
 STEP 2
 buat dataframe berdasarkan soal
 ```
