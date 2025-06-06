@@ -8,16 +8,14 @@ Farras Abdurrazzaq 5025241091 ||
 Abdullah Sultan Barizy 5025241092 <- Me
 
 
-STEP 1
+### STEP 1
 impor library pandas untuk fungsi dataframe dan library math untuk fungsi faktorial
 ```
 import pandas as pd
 import math
 ```
 
-
-
-STEP 2
+### STEP 2
 buat dataframe berdasarkan soal
 ```
 df = pd.DataFrame({
