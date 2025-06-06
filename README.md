@@ -7,7 +7,15 @@ Willy Dava Nugraha 5025241090 ||
 Farras Abdurrazzaq 5025241091 ||
 Abdullah Sultan Barizy 5025241092 <- Me
 
+## GLOSARIUM SINTAKS
+- `df = pd.DataFrame` membuat sebuah Data Frame bernama df
+- `df['y'].shift(-1)` mengambil isi data frame dengan indeks sebesar 1 baris ke atas (minus)
+- `df.dropna()` menghapus nilai data frame apabila berisi NaN
+- `df.to_frame('Δfx')` memberi nama kolom agar bisa dipakai di iterasi selanjutnya
+- `df.iloc[0]['x']` mengambil data ke-0 dari kolom x
 
+
+## PENGERJAAN SOAL
 ### STEP 1
 impor library pandas untuk fungsi dataframe dan library math untuk fungsi faktorial
 ```
