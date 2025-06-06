@@ -1,10 +1,10 @@
 # FP-KOMNUM-092
 
 Nama Anggota Kelompok 01
-Aji Zaenul Mustafa 5025241065
-Nick Alan Marpaung 5025241088
-Willy Dava Nugraha 5025241090
-Farras Abdurrazzaq 5025241091
+Aji Zaenul Mustafa 5025241065 ||
+Nick Alan Marpaung 5025241088 ||
+Willy Dava Nugraha 5025241090 ||
+Farras Abdurrazzaq 5025241091 ||
 Abdullah Sultan Barizy 5025241092 <- Me
 
 STEP 1
